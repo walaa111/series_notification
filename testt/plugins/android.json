@@ -9,6 +9,10 @@
     "installed_plugins": {
         "cordova-plugin-firebase": {
             "PACKAGE_NAME": "com.test.app"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "85075801930",
+            "PACKAGE_NAME": "com.test.app"
         }
     },
     "dependent_plugins": {}
