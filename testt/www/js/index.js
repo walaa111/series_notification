@@ -28,6 +28,26 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        var push = PushNotification.init({ "android": {"senderID": "1046278144488"},
+         "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+ 
+    push.on('registration', function(data) {
+        // data.registrationId 
+    });
+ 
+    push.on('notification', function(data) {
+        // data.message, 
+        // data.title, 
+        // data.count, 
+        // data.sound, 
+        // data.image, 
+        // data.additionalData 
+    });
+ 
+    push.on('error', function(e) {
+        // e.message 
+    });
+API
     },
 
     // Update DOM on a Received Event
