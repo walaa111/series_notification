@@ -28,7 +28,6 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-<<<<<<< HEAD
         // Add to index.js or the first page that loads with your app.
 // For Intel XDK and please add this to your app.js.
 
@@ -49,15 +48,6 @@ document.addEventListener('deviceready', function () {
   // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
   // window.plugins.OneSignal.syncHashedEmail(userEmail);
 }, false);
-=======
-
-        
-        PushNotification.init({
-    android: {
-        senderID: 1046278144488
-    }
-});
->>>>>>> 4587177eccc0309d632634f2aa74030634ee475c
     },
 
     // Update DOM on a Received Event
