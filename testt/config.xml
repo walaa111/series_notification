@@ -10,6 +10,11 @@
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-firebase" spec="0.1.24" />
+
+    <preference name="android-build-tool" value="gradle" />
+<plugin name="phonegap-plugin-push" source="npm">
+    <param name="SENDER_ID" value="1046278144488" />
+</plugin>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
